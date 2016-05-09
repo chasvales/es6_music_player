@@ -1,0 +1,384 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, _css/reset.less */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+/* line 27, _css/reset.less */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+/* line 31, _css/reset.less */
+body {
+  line-height: 1;
+}
+/* line 34, _css/reset.less */
+ol,
+ul {
+  list-style: none;
+}
+/* line 37, _css/reset.less */
+blockquote,
+q {
+  quotes: none;
+}
+/* line 40, _css/reset.less */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+/* line 45, _css/reset.less */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* line 49, _css/reset.less */
+a {
+  text-decoration: none;
+}
+/* line 52, _css/reset.less */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* line 2, _css/main.less */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+/* line 7, _css/main.less */
+.animate_half_sec {
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+}
+/* line 12, _css/main.less */
+.clear {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 17, _css/main.less */
+#content-area {
+  width: 100%;
+  min-height: 355px;
+  height: 100vh;
+  margin: auto;
+  /* PLAYER CONTROLS WIDGET */
+}
+/* line 23, _css/main.less */
+#content-area #playlist-sidbar {
+  width: 30%;
+  height: 90%;
+  float: left;
+  padding: 0 2%;
+  background-color: #000000;
+}
+/* line 30, _css/main.less */
+#content-area #playlist-sidbar #player-songinfo {
+  height: 50%;
+}
+/* line 33, _css/main.less */
+#content-area #playlist-sidbar #player-songinfo h4 {
+  font-size: 1.3rem;
+  color: #cecece;
+  text-transform: uppercase;
+}
+/* line 38, _css/main.less */
+#content-area #playlist-sidbar #player-songinfo h5 {
+  font-size: .85rem;
+  line-height: 1.7rem;
+  color: #a6a6a6;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+/* line 46, _css/main.less */
+#content-area #playlist-sidbar #player-album-image {
+  width: 100%;
+  margin: 10px auto;
+  text-align: center;
+}
+/* line 51, _css/main.less */
+#content-area #playlist-sidbar #player-album-image h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #2b2be4;
+  font-weight: 600;
+}
+/* line 57, _css/main.less */
+#content-area #playlist-sidbar #player-album-image h5 {
+  font-size: .65rem;
+  text-transform: uppercase;
+  color: #dedede;
+}
+/* line 62, _css/main.less */
+#content-area #playlist-sidbar #player-album-image img {
+  max-width: 100%;
+}
+/* line 67, _css/main.less */
+#content-area #playlist-widget {
+  position: relative;
+  width: 70%;
+  height: 90%;
+  padding: 60px;
+  float: left;
+  background-color: #181818;
+}
+/* line 75, _css/main.less */
+#content-area #playlist-widget:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 81, _css/main.less */
+#content-area #playlist-widget li {
+  display: block;
+  padding: 20px 0;
+  border-bottom: 1px solid #303030;
+  position: relative;
+  width: 100%;
+}
+/* line 88, _css/main.less */
+#content-area #playlist-widget li a {
+  color: #fff;
+  display: block;
+  width: 100%;
+}
+/* line 93, _css/main.less */
+#content-area #playlist-widget li a:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 99, _css/main.less */
+#content-area #playlist-widget li:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 106, _css/main.less */
+#content-area #playlist-widget li.now-playling-inlist a {
+  color: #3fc709;
+}
+/* line 111, _css/main.less */
+#content-area #playlist-widget h4 {
+  float: left;
+  display: block;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+/* line 118, _css/main.less */
+#content-area #playlist-widget h4 span {
+  display: block;
+  margin-top: 10px;
+  font-size: .85rem;
+  font-weight: 400;
+}
+/* line 125, _css/main.less */
+#content-area #playlist-widget .playlist-song-duration {
+  float: right;
+}
+/* line 130, _css/main.less */
+#content-area #playerWidget {
+  position: relative;
+  width: 100%;
+  background-color: #0e0e0e;
+  height: 10%;
+  border-top: 1px solid #2c2c2c;
+}
+/* line 137, _css/main.less */
+#content-area #playerWidget #controls-container {
+  padding: 20px;
+  float: left;
+  width: 12%;
+  margin-right: 3%;
+}
+/* line 143, _css/main.less */
+#content-area #playerWidget #controls-container .adjust-control {
+  font-size: 1.2rem;
+  color: #fff;
+  float: left;
+  margin-right: 20px;
+  display: block;
+  line-height: 1.5rem;
+}
+/* line 151, _css/main.less */
+#content-area #playerWidget #controls-container .adjust-control:last-child {
+  margin-right: 0;
+}
+/* line 155, _css/main.less */
+#content-area #playerWidget #controls-container .adjust-control#controls-play-btn {
+  font-size: 1.85rem;
+  margin-top: 0px;
+}
+/* line 159, _css/main.less */
+#content-area #playerWidget #controls-container .adjust-control#controls-play-btn:before {
+  content: "\f04b";
+  font-family: "fontAwesome";
+}
+/* line 166, _css/main.less */
+#content-area #playerWidget #controls-container .adjust-control#controls-play-btn.playpause:before {
+  content: "\f04c";
+}
+/* line 173, _css/main.less */
+#content-area #playerWidget #playler-progressbar {
+  width: 85%;
+  margin-top: 2.5%;
+  float: left;
+}
+/* line 178, _css/main.less */
+#content-area #playerWidget #playler-progressbar #player-time-elapsed,
+#content-area #playerWidget #playler-progressbar #player-time-duration {
+  float: left;
+  width: 5%;
+  color: #9b9b9b;
+  font-size: 0.85rem;
+  margin-top: -5px;
+}
+/* line 186, _css/main.less */
+#content-area #playerWidget #playler-progressbar #player-bar {
+  height: 3px;
+  background-color: #585858;
+  position: static;
+  float: left;
+  width: 87%;
+  margin-right: 2%;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+}
+/* line 196, _css/main.less */
+#content-area #playerWidget #playler-progressbar #player-bar:hover span {
+  height: 5px;
+  margin-top: -1px;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+}
+/* line 203, _css/main.less */
+#content-area #playerWidget #playler-progressbar #player-bar span {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #3fc709;
+  z-index: 10;
+}
+/* line 213, _css/main.less */
+#content-area #playerWidget #playler-progressbar #player-bar span #bar_dragger {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #e9e9e9;
+  background-color: #ffffff;
+  display: block;
+  float: right;
+  margin-top: -6px;
+  position: relative;
+  left: 15px;
+}
+/*# sourceMappingURL=_css/main.css.map */

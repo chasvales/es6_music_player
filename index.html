@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Prototype</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+	<link rel="stylesheet" href="_css/main.css">
+</head>
+<body>
+	<div id="content-area">
+		<div id="playlist-sidbar">
+			<div id="player-songinfo">
+				<div id="player-album-image"><img src="_img/logo.png"><h4>Bravo Music</h4><h5>A ES6 experiment by Chas Vales</h5></div>
+				<h4 id="player-song-title"></h4>
+				<h5 id="player-song-artist"></h5>
+			</div>
+		</div>
+		<div id="playlist-widget">
+			<ul id="playlist-widget-container">
+			</ul>
+		</div>
+		<div class="clear"></div>
+		<div id="playerWidget">
+			<div id="controls-container">
+				<a href="#" class="adjust-control" id="controls-prev-btn" data-control="prev">
+					<i class="fa fa-step-backward" aria-hidden="true"></i>
+				</a>
+				<a href="#" class="adjust-control" id="controls-play-btn" data-control="play">
+				</a>
+				<a href="#" class="adjust-control" id="controls-next-btn" data-control="next">
+					<i class="fa fa-step-forward" aria-hidden="true"></i>
+				</a>
+			</div>
+			<div id="playler-progressbar">
+				<span id="player-time-elapsed">0:00</span>
+				<div id="player-bar">
+					<span id="player-bar-progress">
+						<span id="bar_dragger"></span>
+					</span>
+				</div>
+
+				<span id="player-time-duration">0:00</span>
+			</div>
+		</div>
+	</div>
+	<script src="_js/songs.js"></script>
+	<script src="_js/app.js"></script>
+</body>
+</html>
